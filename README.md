@@ -53,6 +53,20 @@ I balance **web experiences** 🌐, **mobile apps** 📱, and **video games** �
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 ---
+### **Editors & IDEs**
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Cursor](https://img.shields.io/badge/Cursor-09D3AC.svg?style=for-the-badge&logo=cursor&logoColor=white) ![Antigravity](https://img.shields.io/badge/Antigravity-FF6B6B.svg?style=for-the-badge&logoColor=white)
+
+### **Testing Tools**
+![Jest](https://img.shields.io/badge/Jest-C21325.svg?style=for-the-badge&logo=jest&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-729B1B.svg?style=for-the-badge&logo=vitest&logoColor=white)
+
+### **Build Tools**
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+
+### **Deployment & Container**
+![Docker](https://img.shields.io/badge/Docker-2496ED.svg?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
+
+### **Monitoring & Tools**
+![Sentry](https://img.shields.io/badge/Sentry-362D59.svg?style=for-the-badge&logo=sentry&logoColor=white)
 
 ## 📊 GitHub Statistics:
 
