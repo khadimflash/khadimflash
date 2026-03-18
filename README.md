@@ -13,18 +13,18 @@ I craft **scalable web applications**, **mobile apps**, and **indie games** that
 Building **[titigo_backend](https://github.com/khadimflash/titigo_backend)** — a high-performance TypeScript REST API with production-ready architecture
 
 👯 **Looking to Collaborate**  
-- Full-stack web applications & indie game projects
-- Mobile development initiatives
-- Open-source contributions
+- Full-stack web applications & indie game projects  
+- Mobile development initiatives  
+- Open-source contributions  
 - Innovative tech initiatives
 
 🤝 **Seeking Help With**  
 Cloud deployment strategies, advanced CI/CD pipelines, and system architecture design
 
 🌱 **Currently Learning**  
-- Advanced TypeScript patterns & system design
-- DevOps & GitHub Actions automation
-- Scalable backend architecture
+- Advanced TypeScript patterns & system design  
+- DevOps & GitHub Actions automation  
+- Scalable backend architecture  
 - Modern game development techniques
 
 💬 **Ask Me About**  
@@ -104,7 +104,7 @@ Feel free to reach out and let's build something amazing together!
 
 <div align="center">
 
-[![Profile Views](https://visitcount.itsvg.in/api?id=khadimflash&icon=0&color=0)](https://visitcount.itsvg.in)
+To view repository traffic and insights, visit: [Repository Traffic - Insights](https://github.com/khadimflash/khadimflash/graphs/traffic)
 
 </div>
 
