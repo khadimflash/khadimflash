@@ -72,7 +72,7 @@ I balance **web experiences** 🌐, **mobile apps** 📱, and **video games** �
 
 <div align="center">
 
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=khadimflash&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4)
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=khadimflash&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4)
 
 </div>
 
@@ -80,7 +80,11 @@ I balance **web experiences** 🌐, **mobile apps** 📱, and **video games** �
 
 ## 🔝 Top Contributed Repositories
 
+<div align="center">
+
 ![Top Repos](https://github-contributor-stats.vercel.app/api?username=khadimflash&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
+
+</div>
 
 ---
 
@@ -98,6 +102,10 @@ I balance **web experiences** 🌐, **mobile apps** 📱, and **video games** �
 
 Feel free to reach out and let's build something amazing together!
 
+<div align="center">
+
 [![Profile Views](https://visitcount.itsvg.in/api?id=khadimflash&icon=0&color=0)](https://visitcount.itsvg.in)
+
+</div>
 
 <!-- Proudly created and maintained by Khadim Flash -->
