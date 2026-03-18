@@ -1,6 +1,6 @@
 <div align="center">
 
-# Khadim Flash
+# Khadim GNING
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=1E88E5&center=true&vCenter=true&width=500&lines=Full-Stack+Developer;Mobile+Developer;Game+Dev+Enthusiast;Always+learning+new+things)](https://git.io/typing-svg)
 
