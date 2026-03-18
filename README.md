@@ -1,77 +1,36 @@
-# Project Title
+# Hi there 👋
 
-## Description
+## Khadim Flash
 
-This project does XYZ...
+### About Me
 
-## Features
-- Feature 1
-- Feature 2
+Welcome to my GitHub profile! I'm a passionate developer with a love for coding and technology.
 
-## Getting Started
+### Tech Stack
 
-To get a local copy up and running follow these simple steps.
+- JavaScript
+- Python
+- Node.js
+- React
+- Git
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/khadimflash/khadimflash.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+### GitHub Statistics
 
-## Usage
+[![Khadim's GitHub stats](https://github-readme-stats.vercel.app/api?username=khadimflash&show_icons=true&theme=radical)](https://github.com/khadimflash)
 
-Provide instructions and examples for use.
+### GitHub Trophies
 
-## Contributing
+[![Khadim's Trophies](https://github-profile-trophy.vercel.app/?username=khadimflash&theme=radical)](https://github.com/khadimflash)
 
-Contributions are what make the open-source community such amazing places to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+### Top Contributed Repositories
 
-## License
+- [My Awesome Project](https://github.com/khadimflash/my-awesome-project)
+- [Another Great Project](https://github.com/khadimflash/another-great-project)
 
-Distributed under the MIT License. See `LICENSE` for more information.
+### Random Dev Quote
 
-# Featured Projects
+> "Code is like humor. When you have to explain it, it’s bad." – Cory House
 
-- **Project A**: A brief description of Project A.
-- **Project B**: A brief description of Project B.
+### Let's Connect
 
-# Highlighted Repositories
-
-- **Repository A**: A brief description of Repository A.
-- **Repository B**: A brief description of Repository B.
-
-# Social Links & Contact
-
-- [LinkedIn](https://www.linkedin.com/in/yourprofile)
-- [Twitter](https://twitter.com/yourprofile)
-
-For inquiries, reach out at: your.email@example.com
-
-# Certifications & Achievements
-
-- **Certification A**: Description of Certification A.
-- **Achievement B**: Description of Achievement B.
-
-# Open Source Contributions
-
-- **Contribution A**: Description of your first contribution.
-- **Contribution B**: Description of your second contribution.
-
-# Latest Articles
-
-1. [Article A](https://linktoarticle.com)
-2. [Article B](https://linktoarticle.com)
-
-# Available For
-
-Currently available for freelance projects and collaborations.
-
-# Fun Stats
-
-- **Projects Completed**: 50+
-- **Languages Known**: 5+
-
-*Updated on 2026-03-18 21:14:29 UTC*
+Feel free to reach out on my social media: [LinkedIn](https://linkedin.com/in/khadimflash) | [Twitter](https://twitter.com/khadimflash) | [Website](https://khadimflash.com)
