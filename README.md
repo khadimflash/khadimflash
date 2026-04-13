@@ -108,6 +108,6 @@ I'm open to collaborating on full-stack projects, mobile apps, or indie games. I
 
 <div align="center">
 
-**[LinkedIn](https://linkedin.com/in/TONLIEN)** · **[Email](mailto:gningkhadim23@gmail.com)** · **[Portfolio](https://tonportfolio.dev)**
+**[LinkedIn](https://www.linkedin.com/in/khadim-gning-a8b564282/)** · **[Email](mailto:gningkhadim23@gmail.com)** · **[Portfolio](https://tonportfolio.dev)**
 
 </div>
