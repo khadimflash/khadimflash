@@ -26,13 +26,11 @@ Currently, I’m building [titigo_backend](https://github.com/khadimflash/titigo
 
 ---
 
-### 🚀 Featured Projects
+### 🔧 Current Projects
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [**titigo_backend**](https://github.com/khadimflash/titigo_backend) | High-performance API with clean architecture and maintainable backend patterns | TypeScript, Node.js, Express, MongoDB |
-| [**MovieFlix**](https://github.com/khadimflash/movie_rating_app) | Web app for browsing top-rated movies with search, filtering, trailers, and infinite scrolling | React, Axios, TMDB API |
-| [**Portfolio**](https://tonportfolio.dev) | Personal portfolio showcasing my work, skills, and projects | React, Vite, CSS |
+- [**titigo_backend**](https://github.com/khadimflash/titigo_backend) — Production-ready TypeScript backend with clean architecture and scalable API patterns.
+- [**MovieFlix**](https://github.com/khadimflash/movie_rating_app) — Movie discovery platform with search, filters, trailers, and smooth browsing experiences.
+- [**Portfolio**](https://tonportfolio.dev) — Personal portfolio highlighting my projects, skills, and experience.
 
 ---
 
