@@ -2,11 +2,11 @@
 
 # Khadim GNING
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=1E88E5&center=true&vCenter=true&width=500&lines=Full-Stack+Developer;Mobile+Developer;Game+Developer)](https://github.com/khadimflash)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=1E88E5&center=true&vCenter=true&width=500&lines=Full-Stack+Developer;Mobile+Developer;Game+Developer;Backend+Engineer)](https://github.com/khadimflash)
 
-Building scalable backends, crafting mobile experiences, and exploring indie game development.
+Building reliable backends, creating polished digital products, and exploring game development.
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/TONLIEN)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/khadim-gning-a8b564282/)
 [![Portfolio](https://img.shields.io/badge/-Portfolio-000?style=flat-square&logo=vercel&logoColor=white)](https://tonportfolio.dev)
 [![Email](https://img.shields.io/badge/-Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:gningkhadim23@gmail.com)
 
@@ -16,11 +16,13 @@ Building scalable backends, crafting mobile experiences, and exploring indie gam
 
 ---
 
-### 🧑‍💻 About
+### 👨‍💻 About Me
 
-I'm a full-stack developer based in Dakar, passionate about building robust backend systems and shipping polished user experiences — from web to mobile to games. I love clean architecture, automation, and solving complex problems through elegant code.
+I’m a full-stack developer based in Dakar, passionate about building scalable backend systems, clean user experiences, and digital products that solve real problems.
 
-**Currently:** Building [titigo_backend](https://github.com/khadimflash/titigo_backend) — a production-ready TypeScript REST API with scalable architecture.
+My work spans across web, mobile, and game development, with a strong focus on architecture, maintainability, and performance.
+
+Currently, I’m building [titigo_backend](https://github.com/khadimflash/titigo_backend): a production-ready TypeScript API designed with scalable architecture and clean engineering practices.
 
 ---
 
@@ -28,12 +30,13 @@ I'm a full-stack developer based in Dakar, passionate about building robust back
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| [**titigo_backend**](https://github.com/khadimflash/titigo_backend) | High-performance REST API with clean architecture | TypeScript, Node.js, Express, MongoDB |
-| [**MovieFlix**](https://github.com/khadimflash/movie_rating_app) | Web app to explore and filter Top 250 IMDB — search, filters by genre/rating, trailers, infinite scroll | React, Axios, TMDB API |
+| [**titigo_backend**](https://github.com/khadimflash/titigo_backend) | High-performance API with clean architecture and maintainable backend patterns | TypeScript, Node.js, Express, MongoDB |
+| [**MovieFlix**](https://github.com/khadimflash/movie_rating_app) | Web app for browsing top-rated movies with search, filtering, trailers, and infinite scrolling | React, Axios, TMDB API |
+| [**Portfolio**](https://tonportfolio.dev) | Personal portfolio showcasing my work, skills, and projects | React, Vite, CSS |
 
 ---
 
-### 🛠 Tech Stack
+### 🛠️ Tech Stack
 
 **Languages**
 
@@ -71,7 +74,7 @@ I'm a full-stack developer based in Dakar, passionate about building robust back
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-**Game Dev**
+**Game Development**
 
 ![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
 
@@ -87,11 +90,11 @@ I'm a full-stack developer based in Dakar, passionate about building robust back
 ![System Design](https://img.shields.io/badge/System_Design-FF6B6B?style=for-the-badge&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Game Dev](https://img.shields.io/badge/Game_Development-000000?style=for-the-badge&logo=unity&logoColor=white)
+![Game Development](https://img.shields.io/badge/Game_Development-000000?style=for-the-badge&logo=unity&logoColor=white)
 
 ---
 
-### 📊 Stats
+### 📊 GitHub Stats
 
 <div align="center">
 
@@ -105,9 +108,9 @@ I'm a full-stack developer based in Dakar, passionate about building robust back
 
 ---
 
-### 📫 Let's Connect
+### 📫 Let’s Connect
 
-I'm open to collaborating on full-stack projects, mobile apps, or indie games. If you have an interesting idea or an open-source project that needs help — reach out.
+I’m open to collaborations on full-stack projects, mobile apps, and indie game ideas. If you have a product, startup idea, or open-source project that needs a strong technical partner, let’s talk.
 
 <div align="center">
 
