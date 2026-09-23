@@ -13,6 +13,7 @@
 ### Full-Stack Developer · Backend Engineer · Mobile & Game Developer
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1200&color=1E88E5&center=true&vCenter=true&width=650&lines=Building+reliable+digital+products;Designing+scalable+backend+systems;Creating+web+and+mobile+experiences;Exploring+game+development)](https://github.com/khadimflash)
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/khadim-gning-a8b564282/)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gningkhadim23@gmail.com)
 
