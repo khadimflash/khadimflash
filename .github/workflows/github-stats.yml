@@ -4,9 +4,18 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update-github-stats.mjs"
+      - ".github/workflows/github-stats.yml"
 
 permissions:
   contents: write
+
+concurrency:
+  group: github-stats
+  cancel-in-progress: true
 
 jobs:
   update-stats:
@@ -16,21 +25,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
       - name: Generate GitHub statistics
         run: node scripts/update-github-stats.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # STATS_TOKEN (PAT optionnel, scope read:user) pour inclure les contributions privées
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Commit generated statistics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/github-stats.svg
+          git add assets/github-stats-dark.svg assets/github-stats-light.svg
 
           if git diff --cached --quiet; then
             echo "No statistics changes."
           else
-            git commit -m "chore: update GitHub statistics"
+            git commit -m "chore: update GitHub statistics [skip ci]"
+            git pull --rebase
             git push
           fi
