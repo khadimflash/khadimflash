@@ -88,39 +88,24 @@ I work across web, mobile, backend, and game development, with particular attent
 
 <div align="center">
 
-<a href="https://github.com/khadimflash">
-  <img
-    src="./assets/github-stats.svg"
-    alt="Khadim GNING GitHub statistics"
-    width="100%"
-  />
-</a>
-
-<br />
-
-<a href="https://github.com/khadimflash">
-  <img
-    src="https://img.shields.io/github/followers/khadimflash?style=for-the-badge&logo=github&label=Followers&color=1E88E5"
-    alt="GitHub followers"
-  />
-</a>
-
 <a href="https://github.com/khadimflash?tab=repositories">
-  <img
-    src="https://img.shields.io/github/stars/khadimflash?style=for-the-badge&logo=github&label=Stars&color=1E88E5"
-    alt="GitHub stars"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-stats-light.svg" />
+    <img src="./assets/github-stats-dark.svg" alt="Statistiques GitHub de Khadim GNING : stars, commits, pull requests, streaks et langages" width="100%" />
+  </picture>
 </a>
 
+<br /><br />
+
+<a href="https://github.com/khadimflash?tab=followers">
+  <img src="https://img.shields.io/github/followers/khadimflash?style=for-the-badge&logo=github&label=Followers&color=1E88E5" alt="GitHub followers" />
+</a>
 <a href="https://github.com/khadimflash?tab=repositories">
-  <img
-    src="https://img.shields.io/github/public-repos/khadimflash?style=for-the-badge&logo=github&label=Public%20Repos&color=1E88E5"
-    alt="Public repositories"
-  />
+  <img src="https://img.shields.io/github/stars/khadimflash?style=for-the-badge&logo=github&label=Stars&color=1E88E5" alt="GitHub stars" />
 </a>
 
 </div>
-
 ---
 
 ## 🤝 Let’s Work Together
