@@ -55,22 +55,10 @@ J’interviens sur le web, le mobile, le backend et le jeu vidéo, avec une atte
 | **Mobile** | ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Android](https://img.shields.io/badge/Android_(Kotlin)-3DDC84?style=flat-square&logo=android&logoColor=white) ![iOS](https://img.shields.io/badge/iOS_(Swift)-000000?style=flat-square&logo=apple&logoColor=white) |
 | **Backend & APIs** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white) |
 | **Bases de données** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
-| **Cloud & DevOps** | ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) |
+| **Architecture** | ![System Design](https://img.shields.io/badge/System_Design-FF6B6B?style=flat-square&logo=diagramsdotnet&logoColor=white) |
+| **Cloud & DevOps** | ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white) |
 | **Tests** | ![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white) |
 | **Développement de jeux** | ![Unity](https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white) ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white) |
-
-</div>
-
-## 🌱 En cours d’apprentissage
-
-<div align="center">
-
-| Domaine | Objectif |
-|:--|:--|
-| ![System Design](https://img.shields.io/badge/System_Design-FF6B6B?style=flat-square&logo=diagramsdotnet&logoColor=white) | Architectures scalables et résilientes : systèmes distribués, cache, files de messages et load balancing |
-| ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square) | Infrastructure cloud, serverless et services managés pour la production |
-| ![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white) | Tests automatisés, pipelines de build et de déploiement pour des mises en production plus rapides et plus sûres |
-| ![Développement de jeux](https://img.shields.io/badge/D%C3%A9veloppement_de_jeux-000000?style=flat-square&logo=unity&logoColor=white) | Systèmes de gameplay, performance et prototypes aboutis avec Unity et C# |
 
 </div>
 
