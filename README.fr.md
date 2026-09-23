@@ -14,7 +14,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1200&color=1E88E5&center=true&vCenter=true&width=650&lines=Des+produits+num%C3%A9riques+fiables;Des+architectures+backend+scalables;Des+exp%C3%A9riences+web+et+mobile;Passionn%C3%A9+de+jeu+vid%C3%A9o)](https://github.com/khadimflash)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-tonportfolio.dev-111827?style=for-the-badge&logo=vercel&logoColor=white)](https://tonportfolio.dev)
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profil-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/khadim-gning-a8b564282/)
 [![Email](https://img.shields.io/badge/Email-Me_contacter-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gningkhadim23@gmail.com)
 
