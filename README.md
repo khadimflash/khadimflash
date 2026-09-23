@@ -90,33 +90,15 @@ I work across web, mobile, backend, and game development, with particular attent
 
 <a href="https://github.com/khadimflash">
   <img
-    height="180"
-    src="https://github-readme-stats.vercel.app/api?username=khadimflash&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=github_dark&cache_seconds=86400"
-    alt="Khadim's GitHub statistics"
+    src="./assets/github-stats.svg"
+    alt="Khadim GNING GitHub statistics"
+    width="100%"
   />
 </a>
+
+<br />
 
 <a href="https://github.com/khadimflash">
-  <img
-    height="180"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=khadimflash&layout=compact&langs_count=8&hide_border=true&theme=github_dark&cache_seconds=86400"
-    alt="Khadim's most used languages"
-  />
-</a>
-
-<br /><br />
-
-<a href="https://github.com/khadimflash">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=khadimflash&bg_color=0d1117&color=1e88e5&line=1e88e5&point=ffffff&area=true&hide_border=true"
-    alt="Khadim's GitHub activity graph"
-    width="92%"
-  />
-</a>
-
-<br /><br />
-
-<a href="https://github.com/khadimflash?tab=followers">
   <img
     src="https://img.shields.io/github/followers/khadimflash?style=for-the-badge&logo=github&label=Followers&color=1E88E5"
     alt="GitHub followers"
