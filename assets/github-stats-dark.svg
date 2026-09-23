@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-label="Statistiques GitHub de khadimflash">
+  <title>Statistiques GitHub de khadimflash</title>
+  <style>
+    .fade { opacity: 0; animation: fade .6s ease forwards; }
+    .draw { stroke-dasharray: 3000; stroke-dashoffset: 3000; animation: draw 2s ease forwards .4s; }
+    @keyframes fade { to { opacity: 1; } }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .fade, .draw { animation: none; opacity: 1; stroke-dashoffset: 0; } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e88e5" stop-opacity=".35"/><stop offset="100%" stop-color="#1e88e5" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="bar"><rect x="640" y="146" width="320" height="12" rx="6"/></clipPath>
+  </defs>
+
+  <rect x=".5" y=".5" width="999" height="459" rx="18" fill="url(#bg)" stroke="#30363d"/>
+
+  <text x="40" y="58" fill="#f0f6fc" font-size="26" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">GitHub Analytics</text>
+  <text x="40" y="84" fill="#8b949e" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">6 followers · 0 forks · 0 code reviews · 0 issues (1 an)</text>
+  <text x="960" y="58" fill="#8b949e" font-size="12" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Mis à jour le 23 septembre 2026</text>
+
+  
+    <g class="fade" style="animation-delay:0.00s">
+      <rect x="40" y="118" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="56" y="146" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Total Stars</text>
+      <text x="56" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">3</text>
+      <text x="156" y="184" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">★</text>
+    </g>
+    <g class="fade" style="animation-delay:0.08s">
+      <rect x="184" y="118" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="200" y="146" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Commits (1 an)</text>
+      <text x="200" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">806</text>
+      <text x="300" y="184" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">◆</text>
+    </g>
+    <g class="fade" style="animation-delay:0.16s">
+      <rect x="328" y="118" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="344" y="146" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Pull Requests</text>
+      <text x="344" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">1</text>
+      <text x="444" y="184" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">⇄</text>
+    </g>
+    <g class="fade" style="animation-delay:0.24s">
+      <rect x="472" y="118" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="488" y="146" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Contribs (1 an)</text>
+      <text x="488" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">809</text>
+      <text x="588" y="184" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">▲</text>
+    </g>
+    <g class="fade" style="animation-delay:0.32s">
+      <rect x="40" y="218" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="56" y="246" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Repos publics</text>
+      <text x="56" y="284" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">10</text>
+      <text x="156" y="284" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">▣</text>
+    </g>
+    <g class="fade" style="animation-delay:0.40s">
+      <rect x="184" y="218" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="200" y="246" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Contribué à</text>
+      <text x="200" y="284" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">0</text>
+      <text x="300" y="284" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">◎</text>
+    </g>
+    <g class="fade" style="animation-delay:0.48s">
+      <rect x="328" y="218" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="344" y="246" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Streak actuel</text>
+      <text x="344" y="284" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">1 j</text>
+      <text x="444" y="284" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">↯</text>
+    </g>
+    <g class="fade" style="animation-delay:0.56s">
+      <rect x="472" y="218" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="488" y="246" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Meilleur streak</text>
+      <text x="488" y="284" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">11 j</text>
+      <text x="588" y="284" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">✦</text>
+    </g>
+
+  <text x="640" y="132" fill="#8b949e" font-size="12" letter-spacing="1" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">LANGAGES LES PLUS UTILISÉS</text>
+  <rect x="640" y="146" width="320" height="12" rx="6" fill="#21262d"/>
+  <g clip-path="url(#bar)"><rect x="640" y="146" width="151.16075377450937" height="12" fill="#7355dd"/><rect x="791.1607537745094" y="146" width="67.20768690433863" height="12" fill="#222c37"/><rect x="858.368440678848" y="146" width="30.18289351590887" height="12" fill="#f1e05a"/><rect x="888.5513341947569" y="146" width="17.066592665180856" height="12" fill="#f34b7d"/><rect x="905.6179268599377" y="146" width="13.856546963482002" height="12" fill="#aace60"/><rect x="919.4744738234197" y="146" width="40.5255261765802" height="12" fill="#6e7681"/></g>
+  
+      <g class="fade" style="animation-delay:0.30s">
+        <circle cx="646" cy="191" r="6" fill="#7355dd"/>
+        <text x="660" y="196" fill="#c9d1d9" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">C#</text>
+        <text x="790" y="196" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">47.2%</text>
+      </g>
+      <g class="fade" style="animation-delay:0.38s">
+        <circle cx="811" cy="191" r="6" fill="#222c37"/>
+        <text x="825" y="196" fill="#c9d1d9" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">ShaderLab</text>
+        <text x="955" y="196" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">21.0%</text>
+      </g>
+      <g class="fade" style="animation-delay:0.46s">
+        <circle cx="646" cy="221" r="6" fill="#f1e05a"/>
+        <text x="660" y="226" fill="#c9d1d9" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">JavaScript</text>
+        <text x="790" y="226" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">9.4%</text>
+      </g>
+      <g class="fade" style="animation-delay:0.54s">
+        <circle cx="811" cy="221" r="6" fill="#f34b7d"/>
+        <text x="825" y="226" fill="#c9d1d9" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">C++</text>
+        <text x="955" y="226" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">5.3%</text>
+      </g>
+      <g class="fade" style="animation-delay:0.62s">
+        <circle cx="646" cy="251" r="6" fill="#aace60"/>
+        <text x="660" y="256" fill="#c9d1d9" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">HLSL</text>
+        <text x="790" y="256" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">4.3%</text>
+      </g>
+      <g class="fade" style="animation-delay:0.70s">
+        <circle cx="811" cy="251" r="6" fill="#6e7681"/>
+        <text x="825" y="256" fill="#c9d1d9" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Other</text>
+        <text x="955" y="256" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">12.7%</text>
+      </g>
+
+  <text x="40" y="348" fill="#8b949e" font-size="12" letter-spacing="1" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">ACTIVITÉ — 52 DERNIÈRES SEMAINES</text>
+  <line x1="40" y1="430" x2="960" y2="430" stroke="#30363d"/>
+  <path d="M40.0,428.4 L58.0,430.0 L76.1,430.0 L94.1,430.0 L112.2,430.0 L130.2,430.0 L148.2,430.0 L166.3,430.0 L184.3,428.4 L202.4,426.8 L220.4,422.0 L238.4,423.6 L256.5,427.6 L274.5,426.8 L292.5,422.0 L310.6,406.0 L328.6,429.2 L346.7,423.6 L364.7,419.6 L382.7,426.8 L400.8,419.6 L418.8,410.0 L436.9,416.4 L454.9,421.2 L472.9,414.8 L491.0,429.2 L509.0,417.2 L527.1,422.0 L545.1,420.4 L563.1,427.6 L581.2,421.2 L599.2,423.6 L617.3,418.0 L635.3,420.4 L653.3,428.4 L671.4,429.2 L689.4,386.8 L707.5,376.4 L725.5,418.0 L743.5,420.4 L761.6,407.6 L779.6,406.8 L797.6,414.0 L815.7,402.8 L833.7,415.6 L851.8,394.8 L869.8,404.4 L887.8,406.8 L905.9,362.0 L923.9,409.2 L942.0,426.8 L960.0,401.2 L960,430 L40,430 Z" fill="url(#area)" class="fade" style="animation-delay:.6s"/>
+  <path d="M40.0,428.4 L58.0,430.0 L76.1,430.0 L94.1,430.0 L112.2,430.0 L130.2,430.0 L148.2,430.0 L166.3,430.0 L184.3,428.4 L202.4,426.8 L220.4,422.0 L238.4,423.6 L256.5,427.6 L274.5,426.8 L292.5,422.0 L310.6,406.0 L328.6,429.2 L346.7,423.6 L364.7,419.6 L382.7,426.8 L400.8,419.6 L418.8,410.0 L436.9,416.4 L454.9,421.2 L472.9,414.8 L491.0,429.2 L509.0,417.2 L527.1,422.0 L545.1,420.4 L563.1,427.6 L581.2,421.2 L599.2,423.6 L617.3,418.0 L635.3,420.4 L653.3,428.4 L671.4,429.2 L689.4,386.8 L707.5,376.4 L725.5,418.0 L743.5,420.4 L761.6,407.6 L779.6,406.8 L797.6,414.0 L815.7,402.8 L833.7,415.6 L851.8,394.8 L869.8,404.4 L887.8,406.8 L905.9,362.0 L923.9,409.2 L942.0,426.8 L960.0,401.2" fill="none" stroke="#1e88e5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" class="draw"/>
+  <text x="960" y="356" fill="#8b949e" font-size="11" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">max 85 / semaine</text>
+</svg>
