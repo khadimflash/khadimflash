@@ -9,13 +9,19 @@ if (!TOKEN && !MOCK) {
   process.exit(1);
 }
 
+// Affiliations analysées quand un token personnel (STATS_TOKEN) est fourni :
+//   OWNER               -> tes repos (publics + privés)
+//   ORGANIZATION_MEMBER -> repos des organisations dont tu es membre
+//   COLLABORATOR        -> repos où tu es invité (activable via INCLUDE_COLLABORATOR=true)
+const AFFILIATIONS = ["OWNER", "ORGANIZATION_MEMBER"];
+if (process.env.INCLUDE_COLLABORATOR === "true") AFFILIATIONS.push("COLLABORATOR");
+
 // ---------------------------------------------------------------------------
-// 1. Récupération des données (une seule requête GraphQL)
+// 1. Récupération des données (GraphQL)
 // ---------------------------------------------------------------------------
 
-const QUERY = `
-query ($login: String!, $cursor: String) {
-  user(login: $login) {
+const USER_FIELDS = `
+    login
     name
     followers { totalCount }
     contributionsCollection {
@@ -30,53 +36,102 @@ query ($login: String!, $cursor: String) {
       }
     }
     pullRequests { totalCount }
-    repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST]) { totalCount }
-    repositories(first: 100, after: $cursor, ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false) {
+    repositoriesContributedTo(
+      contributionTypes: [COMMIT, PULL_REQUEST, REPOSITORY]
+      includeUserRepositories: false
+    ) { totalCount }
+    repositories(
+      first: 100
+      after: $cursor
+      ownerAffiliations: $affiliations
+      privacy: $privacy
+      isFork: false
+      orderBy: { field: PUSHED_AT, direction: DESC }
+    ) {
       totalCount
       pageInfo { hasNextPage endCursor }
       nodes {
+        nameWithOwner
+        isPrivate
+        isArchived
+        owner { __typename login }
         stargazerCount
         forkCount
         languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
           edges { size node { name color } }
         }
       }
-    }
-  }
+    }`;
+
+// Mode complet : "viewer" = le propriétaire du token -> accès aux repos privés et d'organisation
+const VIEWER_QUERY = `
+query ($cursor: String, $affiliations: [RepositoryAffiliation], $privacy: RepositoryPrivacy) {
+  viewer { ${USER_FIELDS} }
 }`;
 
-async function graphql(variables) {
+// Mode public (fallback avec le GITHUB_TOKEN des Actions)
+const PUBLIC_QUERY = `
+query ($login: String!, $cursor: String, $affiliations: [RepositoryAffiliation], $privacy: RepositoryPrivacy) {
+  user(login: $login) { ${USER_FIELDS} }
+}`;
+
+async function graphql(query, variables) {
   const res = await fetch("https://api.github.com/graphql", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${TOKEN}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ query: QUERY, variables }),
+    body: JSON.stringify({ query, variables }),
   });
   const json = await res.json();
-  if (!res.ok || json.errors) {
+  if (!res.ok || (json.errors && !json.data)) {
     throw new Error(JSON.stringify(json.errors || json, null, 2));
   }
-  return json.data.user;
+  if (json.errors) {
+    // Ex. : organisation avec SSO SAML non autorisé pour ce token -> on continue avec ce qui est accessible
+    console.warn("Avertissements GraphQL :", json.errors.map((e) => e.message).join(" | "));
+  }
+  return json.data;
+}
+
+async function detectMode() {
+  try {
+    const { viewer } = await graphql("query { viewer { login } }", {});
+    return viewer?.login?.toLowerCase() === USERNAME.toLowerCase() ? "full" : "public";
+  } catch {
+    return "public"; // GITHUB_TOKEN d'Actions : pas de "viewer" utilisateur
+  }
 }
 
 async function fetchUser() {
-  if (MOCK) return JSON.parse(await fs.readFile(MOCK, "utf8"));
+  if (MOCK) return { mode: "full", user: JSON.parse(await fs.readFile(MOCK, "utf8")) };
+
+  const mode = await detectMode();
+  const query = mode === "full" ? VIEWER_QUERY : PUBLIC_QUERY;
+  const base =
+    mode === "full"
+      ? { affiliations: AFFILIATIONS, privacy: null }
+      : { login: USERNAME, affiliations: ["OWNER"], privacy: "PUBLIC" };
+
+  console.log(
+    mode === "full"
+      ? `Mode complet : repos ${AFFILIATIONS.join(" + ")} (publics + privés)`
+      : "Mode public uniquement : ajoute le secret STATS_TOKEN pour inclure privés et organisations"
+  );
 
   let user = null;
   let cursor = null;
   const repos = [];
   do {
-    const page = await graphql({ login: USERNAME, cursor });
+    const data = await graphql(query, { ...base, cursor });
+    const page = data.viewer || data.user;
     user ??= page;
-    repos.push(...page.repositories.nodes);
-    cursor = page.repositories.pageInfo.hasNextPage
-      ? page.repositories.pageInfo.endCursor
-      : null;
+    repos.push(...page.repositories.nodes.filter(Boolean));
+    cursor = page.repositories.pageInfo.hasNextPage ? page.repositories.pageInfo.endCursor : null;
   } while (cursor);
   user.repositories.nodes = repos;
-  return user;
+  return { mode, user };
 }
 
 // ---------------------------------------------------------------------------
@@ -86,8 +141,12 @@ async function fetchUser() {
 // Langages de "balisage" / notebooks qui gonflent artificiellement les stats
 const IGNORED_LANGUAGES = new Set(["Jupyter Notebook", "HTML", "CSS", "SCSS", "Makefile", "Dockerfile", "Shell", "Batchfile", "PowerShell"]);
 
-function computeStats(user) {
+function computeStats(user, mode) {
   const repos = user.repositories.nodes;
+  const login = user.login.toLowerCase();
+  const owned = repos.filter((r) => r.owner.login.toLowerCase() === login);
+  const orgRepos = repos.filter((r) => r.owner.__typename === "Organization");
+  const orgs = new Set(orgRepos.map((r) => r.owner.login));
   const cc = user.contributionsCollection;
 
   // Langages (hors forks, pondérés par taille)
@@ -130,9 +189,14 @@ function computeStats(user) {
 
   return {
     name: user.name || USERNAME,
-    stars: repos.reduce((s, r) => s + r.stargazerCount, 0),
-    forks: repos.reduce((s, r) => s + r.forkCount, 0),
-    repos: user.repositories.totalCount,
+    mode,
+    stars: owned.reduce((s, r) => s + r.stargazerCount, 0),
+    forks: owned.reduce((s, r) => s + r.forkCount, 0),
+    repos: repos.length,
+    publicRepos: owned.filter((r) => !r.isPrivate).length,
+    privateRepos: owned.filter((r) => r.isPrivate).length,
+    orgRepos: orgRepos.length,
+    orgCount: orgs.size,
     followers: user.followers.totalCount,
     commits: cc.totalCommitContributions + cc.restrictedContributionsCount,
     prs: user.pullRequests.totalCount,
@@ -181,7 +245,7 @@ function render(s, t) {
     ["Commits (1 an)", fmt(s.commits), "◆"],
     ["Pull Requests", fmt(s.prs), "⇄"],
     ["Contribs (1 an)", fmt(s.contributions), "▲"],
-    ["Repos publics", fmt(s.repos), "▣"],
+    [s.mode === "full" ? "Repos analysés" : "Repos publics", fmt(s.repos), "▣"],
     ["Contribué à", fmt(s.contributedTo), "◎"],
     ["Streak actuel", `${s.currentStreak} j`, "↯"],
     ["Meilleur streak", `${s.longestStreak} j`, "✦"],
@@ -244,6 +308,11 @@ function render(s, t) {
   const line = pts.map(([x, y], idx) => `${idx ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
   const area = `${line} L${cx + cw},${cy + ch} L${cx},${cy + ch} Z`;
 
+  const subtitle =
+    s.mode === "full"
+      ? `${s.publicRepos} publics · ${s.privateRepos} privés · ${s.orgRepos} repos dans ${s.orgCount} organisation${s.orgCount > 1 ? "s" : ""} · ${fmt(s.followers)} followers · ${fmt(s.reviews)} reviews`
+      : `${fmt(s.followers)} followers · ${fmt(s.forks)} forks · ${fmt(s.reviews)} code reviews · ${fmt(s.issues)} issues (1 an)`;
+
   const updated = new Date().toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "Africa/Dakar" });
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Statistiques GitHub de ${esc(s.name)}">
@@ -268,7 +337,7 @@ function render(s, t) {
   <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="18" fill="url(#bg)" stroke="${t.border}"/>
 
   <text x="40" y="58" fill="${t.title}" font-size="26" font-weight="700" ${FONT}>GitHub Analytics</text>
-  <text x="40" y="84" fill="${t.muted}" font-size="14" ${FONT}>${fmt(s.followers)} followers · ${fmt(s.forks)} forks · ${fmt(s.reviews)} code reviews · ${fmt(s.issues)} issues (1 an)</text>
+  <text x="40" y="84" fill="${t.muted}" font-size="14" ${FONT}>${esc(subtitle)}</text>
   <text x="${W - 40}" y="58" fill="${t.muted}" font-size="12" text-anchor="end" ${FONT}>Mis à jour le ${esc(updated)}</text>
 
   ${tiles}
@@ -290,8 +359,8 @@ function render(s, t) {
 // 4. Écriture
 // ---------------------------------------------------------------------------
 
-const user = await fetchUser();
-const stats = computeStats(user);
+const { mode, user } = await fetchUser();
+const stats = computeStats(user, mode);
 
 await fs.mkdir("assets", { recursive: true });
 await Promise.all(
