@@ -22,17 +22,10 @@ I’m a full-stack developer based in Dakar, passionate about building scalable 
 
 My work spans across web, mobile, and game development, with a strong focus on architecture, maintainability, and performance.
 
-Currently, I’m building [titigo_backend](https://github.com/khadimflash/titigo_backend): a production-ready TypeScript API designed with scalable architecture and clean engineering practices.
 
 ---
 
-### 🔧 Current Projects
 
-- [**titigo_backend**](https://github.com/khadimflash/titigo_backend) — Production-ready TypeScript backend with clean architecture and scalable API patterns.
-- [**MovieFlix**](https://github.com/khadimflash/movie_rating_app) — Movie discovery platform with search, filters, trailers, and smooth browsing experiences.
-- [**Portfolio**](https://tonportfolio.dev) — Personal portfolio highlighting my projects, skills, and experience.
-
----
 
 ### 🛠️ Tech Stack
 
