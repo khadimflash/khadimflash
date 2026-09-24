@@ -54,13 +54,30 @@ Most of my work lives in private client repositories. Here is a selection of the
 Production ride-hailing platform for the Malian market, built end to end as **sole engineer** for **TaaTaa SARL**.
 
 - Two React Native apps — **Titigo** for passengers and **TitigoPro** for drivers — published on the App Store and Google Play
-- Real-time backend with live trip tracking and geolocation (PostGIS, Socket.IO)
-- WhatsApp OTP authentication, admin dashboard secured with Cloudflare Tunnel + Access
+- **Backend API** (Node.js, Express 5, TypeScript) serving the passenger, driver and admin apps:
+  - Real-time ride lifecycle over Socket.IO (request, accept, start, complete, cancel) with progressive dispatch rather than broadcast
+  - Geolocation, route estimation and pricing with PostgreSQL + PostGIS
+  - Secure 3-step OTP registration by SMS, JWT with rotating refresh tokens, Zod validation
+  - Server-side business rules: one active ride per client, driver verification and debt threshold, atomic payment and commission updates
+  - Admin API with role-based access control (super admin, finance, operations, support) and commission management
+  - Health and readiness probes, Docker, graceful fallbacks for external providers
+- Admin dashboard secured with Cloudflare Tunnel + Access
 - CI/CD with GitHub Actions and deployment on Render
 
-**Stack:** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![PostGIS](https://img.shields.io/badge/PostGIS-336791?style=flat-square&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white)
+**Stack:** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express_5-000000?style=flat-square&logo=express&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![PostGIS](https://img.shields.io/badge/PostGIS-336791?style=flat-square&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
 
 [![Titigo – App Store](https://img.shields.io/badge/Titigo-App_Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white)](https://apps.apple.com/us/app/titigo/id6760189237) [![Titigo – Google Play](https://img.shields.io/badge/Titigo-Google_Play-414141?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.titigo.client) [![TitigoPro – App Store](https://img.shields.io/badge/TitigoPro-App_Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white)](https://apps.apple.com/us/app/titigopro/id6760154957) [![TitigoPro – Google Play](https://img.shields.io/badge/TitigoPro-Google_Play-414141?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.titigo.driver)
+
+**Store metrics** (App Store data refreshes automatically):
+
+<div align="center">
+
+| App | Google Play downloads | App Store rating | Latest iOS version |
+|:--|:--|:--|:--|
+| **Titigo** | ![Titigo downloads](https://img.shields.io/badge/Google_Play-1k%2B%20downloads-414141?style=flat-square&logo=googleplay&logoColor=white) | ![Titigo App Store rating](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fitunes.apple.com%2Flookup%3Fid%3D6760189237&query=%24.results%5B0%5D.averageUserRating&label=App%20Store&color=0D96F6&style=flat-square&logo=appstore&logoColor=white&suffix=%20%E2%98%85) ![Titigo ratings count](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fitunes.apple.com%2Flookup%3Fid%3D6760189237&query=%24.results%5B0%5D.userRatingCount&label=ratings&color=555&style=flat-square) | ![Titigo iOS version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fitunes.apple.com%2Flookup%3Fid%3D6760189237&query=%24.results%5B0%5D.version&label=iOS&color=555&style=flat-square&logo=apple&logoColor=white&prefix=v) |
+| **TitigoPro** | ![TitigoPro downloads](https://img.shields.io/badge/Google_Play-500%2B%20downloads-414141?style=flat-square&logo=googleplay&logoColor=white) | ![TitigoPro App Store rating](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fitunes.apple.com%2Flookup%3Fid%3D6760154957&query=%24.results%5B0%5D.averageUserRating&label=App%20Store&color=0D96F6&style=flat-square&logo=appstore&logoColor=white&suffix=%20%E2%98%85) ![TitigoPro ratings count](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fitunes.apple.com%2Flookup%3Fid%3D6760154957&query=%24.results%5B0%5D.userRatingCount&label=ratings&color=555&style=flat-square) | ![TitigoPro iOS version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fitunes.apple.com%2Flookup%3Fid%3D6760154957&query=%24.results%5B0%5D.version&label=iOS&color=555&style=flat-square&logo=apple&logoColor=white&prefix=v) |
+
+</div>
 
 ### 🏅 MySportPlus — Two-sided sports marketplace
 
