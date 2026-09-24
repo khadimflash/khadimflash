@@ -43,6 +43,60 @@ I work across web, mobile, backend, and game development, with particular attent
 
 ---
 
+## 🚀 Featured Projects
+
+Most of my work lives in private client repositories. Here is a selection of the products I have designed and built.
+
+### 🚕 Titigo & TitigoPro — Ride-hailing platform for Mali
+
+![Live](https://img.shields.io/badge/Live-2EA043?style=flat-square)
+
+Production ride-hailing platform for the Malian market, built end to end as **sole engineer** for **TaaTaa SARL**.
+
+- Two React Native apps — **Titigo** for passengers and **TitigoPro** for drivers — published on the App Store and Google Play
+- Real-time backend with live trip tracking and geolocation (PostGIS, Socket.IO)
+- WhatsApp OTP authentication, admin dashboard secured with Cloudflare Tunnel + Access
+- CI/CD with GitHub Actions and deployment on Render
+
+**Stack:** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![PostGIS](https://img.shields.io/badge/PostGIS-336791?style=flat-square&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white)
+
+[![Titigo – App Store](https://img.shields.io/badge/Titigo-App_Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white)](https://apps.apple.com/us/app/titigo/id6760189237) [![Titigo – Google Play](https://img.shields.io/badge/Titigo-Google_Play-414141?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.titigo.client) [![TitigoPro – App Store](https://img.shields.io/badge/TitigoPro-App_Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white)](https://apps.apple.com/us/app/titigopro/id6760154957) [![TitigoPro – Google Play](https://img.shields.io/badge/TitigoPro-Google_Play-414141?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.titigo.driver)
+
+### 🏅 MySportPlus — Two-sided sports marketplace
+
+![In development](https://img.shields.io/badge/In_development-F59E0B?style=flat-square)
+
+Platform connecting athletes with sports professionals, built for **Nexa Consulting**. I own the backend architecture and development.
+
+- Two mobile apps (athletes / professionals) sharing a single **NestJS** backend
+- 32-model PostgreSQL schema with Prisma
+- Real-time messaging with Socket.IO, Stripe Connect payments with deferred capture
+- Deterministic feed engine and push notifications with per-device delivery tracking
+- Spec-driven development: every business rule has a stable ID referenced by its tests
+
+**Stack:** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white) ![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
+
+### 💰 Deccalma — Mobile payments for West Africa
+
+![In development](https://img.shields.io/badge/In_development-F59E0B?style=flat-square)
+
+Mobile payment app: deposits and money transfers, locked savings vault, tontines between relatives, and a gold & jewelry shop paid from the wallet balance.
+
+- Expo Router architecture in strict TypeScript, with secure session and PIN code, Face ID and encrypted storage
+- Three app variants (development / preview / production) installable side by side, built and shipped with EAS
+
+**Stack:** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
+
+### 🚖 Coco Taxi & Tukki — Mobility apps
+
+![In development](https://img.shields.io/badge/In_development-F59E0B?style=flat-square)
+
+Passenger and driver mobile apps for ride-hailing services, built with React Native / Expo and TypeScript.
+
+**Stack:** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
+
+---
+
 ## 🧰 Tech Stack
 
 <div align="center">
