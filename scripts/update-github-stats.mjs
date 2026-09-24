@@ -234,21 +234,63 @@ const esc = (s) =>
 const fmt = (n) =>
   n >= 1000 ? `${(n / 1000).toFixed(n >= 10000 ? 0 : 1).replace(/\.0$/, "")}k` : String(n);
 
-function render(s, t) {
+// Textes de la carte : "en" -> github-stats-<theme>.svg, "fr" -> github-stats-fr-<theme>.svg
+const LOCALES = {
+  en: {
+    suffix: "",
+    dateLocale: "en-US",
+    title: "GitHub Analytics",
+    aria: (n) => `GitHub statistics for ${n}`,
+    updated: (d) => `Updated ${d}`,
+    kpi: {
+      stars: "Total Stars", commits: "Commits (1 yr)", prs: "Pull Requests", contribs: "Contribs (1 yr)",
+      reposFull: "Repos analyzed", reposPublic: "Public repos", contributedTo: "Contributed to",
+      current: "Current streak", longest: "Longest streak", day: "d",
+    },
+    subtitleFull: (s) =>
+      `${s.publicRepos} public · ${s.privateRepos} private · ${s.orgRepos} repos in ${s.orgCount} organization${s.orgCount > 1 ? "s" : ""} · ${fmt(s.followers)} followers · ${fmt(s.reviews)} reviews`,
+    subtitlePublic: (s) =>
+      `${fmt(s.followers)} followers · ${fmt(s.forks)} forks · ${fmt(s.reviews)} code reviews · ${fmt(s.issues)} issues (1 yr)`,
+    languages: "MOST USED LANGUAGES",
+    activity: "ACTIVITY — LAST 52 WEEKS",
+    max: (m) => `max ${m} / week`,
+  },
+  fr: {
+    suffix: "-fr",
+    dateLocale: "fr-FR",
+    title: "Statistiques GitHub",
+    aria: (n) => `Statistiques GitHub de ${n}`,
+    updated: (d) => `Mis à jour le ${d}`,
+    kpi: {
+      stars: "Total Stars", commits: "Commits (1 an)", prs: "Pull Requests", contribs: "Contribs (1 an)",
+      reposFull: "Repos analysés", reposPublic: "Repos publics", contributedTo: "Contribué à",
+      current: "Streak actuel", longest: "Meilleur streak", day: "j",
+    },
+    subtitleFull: (s) =>
+      `${s.publicRepos} publics · ${s.privateRepos} privés · ${s.orgRepos} repos dans ${s.orgCount} organisation${s.orgCount > 1 ? "s" : ""} · ${fmt(s.followers)} followers · ${fmt(s.reviews)} reviews`,
+    subtitlePublic: (s) =>
+      `${fmt(s.followers)} followers · ${fmt(s.forks)} forks · ${fmt(s.reviews)} code reviews · ${fmt(s.issues)} issues (1 an)`,
+    languages: "LANGAGES LES PLUS UTILISÉS",
+    activity: "ACTIVITÉ — 52 DERNIÈRES SEMAINES",
+    max: (m) => `max ${m} / semaine`,
+  },
+};
+
+function render(s, t, L) {
   const FONT = `font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif"`;
   const W = 1000;
   const H = 460;
 
   // --- Tuiles KPI (grille 4 x 2, colonne gauche) ---
   const kpis = [
-    ["Total Stars", fmt(s.stars), "★"],
-    ["Commits (1 an)", fmt(s.commits), "◆"],
-    ["Pull Requests", fmt(s.prs), "⇄"],
-    ["Contribs (1 an)", fmt(s.contributions), "▲"],
-    [s.mode === "full" ? "Repos analysés" : "Repos publics", fmt(s.repos), "▣"],
-    ["Contribué à", fmt(s.contributedTo), "◎"],
-    ["Streak actuel", `${s.currentStreak} j`, "↯"],
-    ["Meilleur streak", `${s.longestStreak} j`, "✦"],
+    [L.kpi.stars, fmt(s.stars), "★"],
+    [L.kpi.commits, fmt(s.commits), "◆"],
+    [L.kpi.prs, fmt(s.prs), "⇄"],
+    [L.kpi.contribs, fmt(s.contributions), "▲"],
+    [s.mode === "full" ? L.kpi.reposFull : L.kpi.reposPublic, fmt(s.repos), "▣"],
+    [L.kpi.contributedTo, fmt(s.contributedTo), "◎"],
+    [L.kpi.current, `${s.currentStreak} ${L.kpi.day}`, "↯"],
+    [L.kpi.longest, `${s.longestStreak} ${L.kpi.day}`, "✦"],
   ];
   const tileW = 132;
   const tileH = 88;
@@ -308,15 +350,12 @@ function render(s, t) {
   const line = pts.map(([x, y], idx) => `${idx ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
   const area = `${line} L${cx + cw},${cy + ch} L${cx},${cy + ch} Z`;
 
-  const subtitle =
-    s.mode === "full"
-      ? `${s.publicRepos} publics · ${s.privateRepos} privés · ${s.orgRepos} repos dans ${s.orgCount} organisation${s.orgCount > 1 ? "s" : ""} · ${fmt(s.followers)} followers · ${fmt(s.reviews)} reviews`
-      : `${fmt(s.followers)} followers · ${fmt(s.forks)} forks · ${fmt(s.reviews)} code reviews · ${fmt(s.issues)} issues (1 an)`;
+  const subtitle = s.mode === "full" ? L.subtitleFull(s) : L.subtitlePublic(s);
 
-  const updated = new Date().toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "Africa/Dakar" });
+  const updated = new Date().toLocaleDateString(L.dateLocale, { day: "numeric", month: "long", year: "numeric", timeZone: "Africa/Dakar" });
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Statistiques GitHub de ${esc(s.name)}">
-  <title>Statistiques GitHub de ${esc(s.name)}</title>
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(L.aria(s.name))}">
+  <title>${esc(L.aria(s.name))}</title>
   <style>
     .fade { opacity: 0; animation: fade .6s ease forwards; }
     .draw { stroke-dasharray: 3000; stroke-dashoffset: 3000; animation: draw 2s ease forwards .4s; }
@@ -336,22 +375,22 @@ function render(s, t) {
 
   <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="18" fill="url(#bg)" stroke="${t.border}"/>
 
-  <text x="40" y="58" fill="${t.title}" font-size="26" font-weight="700" ${FONT}>GitHub Analytics</text>
+  <text x="40" y="58" fill="${t.title}" font-size="26" font-weight="700" ${FONT}>${esc(L.title)}</text>
   <text x="40" y="84" fill="${t.muted}" font-size="14" ${FONT}>${esc(subtitle)}</text>
-  <text x="${W - 40}" y="58" fill="${t.muted}" font-size="12" text-anchor="end" ${FONT}>Mis à jour le ${esc(updated)}</text>
+  <text x="${W - 40}" y="58" fill="${t.muted}" font-size="12" text-anchor="end" ${FONT}>${esc(L.updated(updated))}</text>
 
   ${tiles}
 
-  <text x="${lx}" y="132" fill="${t.muted}" font-size="12" letter-spacing="1" ${FONT}>LANGAGES LES PLUS UTILISÉS</text>
+  <text x="${lx}" y="132" fill="${t.muted}" font-size="12" letter-spacing="1" ${FONT}>${esc(L.languages)}</text>
   <rect x="${lx}" y="146" width="${lw}" height="12" rx="6" fill="${t.track}"/>
   <g clip-path="url(#bar)">${stacked}</g>
   ${legend}
 
-  <text x="40" y="348" fill="${t.muted}" font-size="12" letter-spacing="1" ${FONT}>ACTIVITÉ — 52 DERNIÈRES SEMAINES</text>
+  <text x="40" y="348" fill="${t.muted}" font-size="12" letter-spacing="1" ${FONT}>${esc(L.activity)}</text>
   <line x1="${cx}" y1="${cy + ch}" x2="${cx + cw}" y2="${cy + ch}" stroke="${t.border}"/>
   <path d="${area}" fill="url(#area)" class="fade" style="animation-delay:.6s"/>
   <path d="${line}" fill="none" stroke="${t.accent}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" class="draw"/>
-  <text x="${cx + cw}" y="${cy - 6}" fill="${t.muted}" font-size="11" text-anchor="end" ${FONT}>max ${max} / semaine</text>
+  <text x="${cx + cw}" y="${cy - 6}" fill="${t.muted}" font-size="11" text-anchor="end" ${FONT}>${esc(L.max(max))}</text>
 </svg>`;
 }
 
@@ -364,8 +403,10 @@ const stats = computeStats(user, mode);
 
 await fs.mkdir("assets", { recursive: true });
 await Promise.all(
-  Object.entries(THEMES).map(([name, theme]) =>
-    fs.writeFile(`assets/github-stats-${name}.svg`, render(stats, theme))
+  Object.values(LOCALES).flatMap((L) =>
+    Object.entries(THEMES).map(([name, theme]) =>
+      fs.writeFile(`assets/github-stats${L.suffix}-${name}.svg`, render(stats, theme, L))
+    )
   )
 );
 
