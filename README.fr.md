@@ -44,6 +44,60 @@ J’interviens sur le web, le mobile, le backend et le jeu vidéo, avec une atte
 
 ---
 
+## 🚀 Projets phares
+
+L’essentiel de mon travail se trouve dans des dépôts privés de clients. Voici une sélection des produits que j’ai conçus et développés.
+
+### 🚕 Titigo & TitigoPro — Plateforme VTC au Mali
+
+![En production](https://img.shields.io/badge/En_production-2EA043?style=flat-square)
+
+Plateforme VTC en production pour le marché malien, développée de bout en bout en tant que **seul ingénieur** pour **TaaTaa SARL**.
+
+- Deux applications React Native — **Titigo** pour les passagers et **TitigoPro** pour les chauffeurs — publiées sur l’App Store et Google Play
+- Backend temps réel avec suivi des courses et géolocalisation (PostGIS, Socket.IO)
+- Authentification par OTP WhatsApp, dashboard d’administration sécurisé avec Cloudflare Tunnel + Access
+- CI/CD avec GitHub Actions et déploiement sur Render
+
+**Stack :** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![PostGIS](https://img.shields.io/badge/PostGIS-336791?style=flat-square&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white)
+
+[![Titigo – App Store](https://img.shields.io/badge/Titigo-App_Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white)](https://apps.apple.com/us/app/titigo/id6760189237) [![Titigo – Google Play](https://img.shields.io/badge/Titigo-Google_Play-414141?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.titigo.client) [![TitigoPro – App Store](https://img.shields.io/badge/TitigoPro-App_Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white)](https://apps.apple.com/us/app/titigopro/id6760154957) [![TitigoPro – Google Play](https://img.shields.io/badge/TitigoPro-Google_Play-414141?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.titigo.driver)
+
+### 🏅 MySportPlus — Marketplace sportive
+
+![En développement](https://img.shields.io/badge/En_d%C3%A9veloppement-F59E0B?style=flat-square)
+
+Plateforme qui met en relation des sportifs et des professionnels du sport, développée pour **Nexa Consulting**. Je suis responsable de l’architecture et du développement backend.
+
+- Deux applications mobiles (sportifs / professionnels) partageant un seul backend **NestJS**
+- Schéma PostgreSQL de 32 modèles avec Prisma
+- Messagerie temps réel avec Socket.IO, paiements Stripe Connect avec capture différée
+- Moteur de feed déterministe et notifications push avec suivi de livraison par appareil
+- Développement piloté par les specs : chaque règle métier a un identifiant stable cité par ses tests
+
+**Stack :** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white) ![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
+
+### 💰 Deccalma — Paiement mobile pour l’Afrique de l’Ouest
+
+![En développement](https://img.shields.io/badge/En_d%C3%A9veloppement-F59E0B?style=flat-square)
+
+Application de paiement mobile : dépôt et transfert d’argent, épargne bloquée (coffre), tontine entre proches et boutique d’or et de bijoux payée depuis le solde.
+
+- Architecture Expo Router en TypeScript strict, avec session et code secret sécurisés, Face ID et stockage chiffré
+- Trois variantes (développement / preview / production) installables côte à côte, compilées et publiées avec EAS
+
+**Stack :** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
+
+### 🚖 Coco Taxi & Tukki — Applications de mobilité
+
+![En développement](https://img.shields.io/badge/En_d%C3%A9veloppement-F59E0B?style=flat-square)
+
+Applications mobiles passager et chauffeur pour des services VTC, développées avec React Native / Expo et TypeScript.
+
+**Stack :** ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
+
+---
+
 ## 🧰 Stack technique
 
 <div align="center">
