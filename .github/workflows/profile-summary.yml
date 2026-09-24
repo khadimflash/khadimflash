@@ -8,15 +8,23 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-summary
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      # Indispensable : l'action fait un "git add" / "git push", il faut donc le repo en local
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Generate profile summary cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: khadimflash
-          UTC: true
+          UTC_OFFSET: 0
