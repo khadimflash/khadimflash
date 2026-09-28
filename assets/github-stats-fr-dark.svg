@@ -21,7 +21,7 @@
 
   <text x="40" y="58" fill="#f0f6fc" font-size="26" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Statistiques GitHub</text>
   <text x="40" y="84" fill="#8b949e" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">10 publics · 2 privés · 5 repos dans 3 organisations · 6 followers · 1 reviews</text>
-  <text x="960" y="58" fill="#8b949e" font-size="12" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Mis à jour le 27 septembre 2026</text>
+  <text x="960" y="58" fill="#8b949e" font-size="12" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Mis à jour le 28 septembre 2026</text>
 
   
     <g class="fade" style="animation-delay:0.00s">
@@ -33,7 +33,7 @@
     <g class="fade" style="animation-delay:0.08s">
       <rect x="184" y="118" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
       <text x="200" y="146" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Commits (1 an)</text>
-      <text x="200" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">660</text>
+      <text x="200" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">659</text>
       <text x="300" y="184" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">◆</text>
     </g>
     <g class="fade" style="animation-delay:0.16s">
@@ -45,7 +45,7 @@
     <g class="fade" style="animation-delay:0.24s">
       <rect x="472" y="118" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
       <text x="488" y="146" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Contribs (1 an)</text>
-      <text x="488" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">827</text>
+      <text x="488" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">826</text>
       <text x="588" y="184" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">▲</text>
     </g>
     <g class="fade" style="animation-delay:0.32s">
