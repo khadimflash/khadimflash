@@ -21,7 +21,7 @@
 
   <text x="40" y="58" fill="#f0f6fc" font-size="26" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Statistiques GitHub</text>
   <text x="40" y="84" fill="#8b949e" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">10 publics · 2 privés · 5 repos dans 3 organisations · 6 followers · 1 reviews</text>
-  <text x="960" y="58" fill="#8b949e" font-size="12" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Mis à jour le 6 octobre 2026</text>
+  <text x="960" y="58" fill="#8b949e" font-size="12" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Mis à jour le 7 octobre 2026</text>
 
   
     <g class="fade" style="animation-delay:0.00s">
@@ -33,19 +33,19 @@
     <g class="fade" style="animation-delay:0.08s">
       <rect x="184" y="118" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
       <text x="200" y="146" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Commits (1 an)</text>
-      <text x="200" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">684</text>
+      <text x="200" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">691</text>
       <text x="300" y="184" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">◆</text>
     </g>
     <g class="fade" style="animation-delay:0.16s">
       <rect x="328" y="118" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
       <text x="344" y="146" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Pull Requests</text>
-      <text x="344" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">163</text>
+      <text x="344" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">165</text>
       <text x="444" y="184" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">⇄</text>
     </g>
     <g class="fade" style="animation-delay:0.24s">
       <rect x="472" y="118" width="132" height="88" rx="12" fill="#161b22" stroke="#30363d"/>
       <text x="488" y="146" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Contribs (1 an)</text>
-      <text x="488" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">853</text>
+      <text x="488" y="184" fill="#f0f6fc" font-size="28" font-weight="700" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">862</text>
       <text x="588" y="184" fill="#1e88e5" font-size="16" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">▲</text>
     </g>
     <g class="fade" style="animation-delay:0.32s">
@@ -75,17 +75,17 @@
 
   <text x="640" y="132" fill="#8b949e" font-size="12" letter-spacing="1" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">LANGAGES LES PLUS UTILISÉS</text>
   <rect x="640" y="146" width="320" height="12" rx="6" fill="#21262d"/>
-  <g clip-path="url(#bar)"><rect x="640" y="146" width="288.3635540630167" height="12" fill="#3178c6"/><rect x="928.3635540630166" y="146" width="11.680401229836864" height="12" fill="#7355dd"/><rect x="940.0439552928535" y="146" width="7.785075739033751" height="12" fill="#f1e05a"/><rect x="947.8290310318873" y="146" width="5.1932312400542315" height="12" fill="#222c37"/><rect x="953.0222622719416" y="146" width="1.318759300796231" height="12" fill="#f34b7d"/><rect x="954.3410215727378" y="146" width="5.658978427262263" height="12" fill="#6e7681"/></g>
+  <g clip-path="url(#bar)"><rect x="640" y="146" width="288.71941689099964" height="12" fill="#3178c6"/><rect x="928.7194168909996" y="146" width="11.549014138445322" height="12" fill="#7355dd"/><rect x="940.268431029445" y="146" width="7.697505249160366" height="12" fill="#f1e05a"/><rect x="947.9659362786053" y="146" width="5.134815134808509" height="12" fill="#222c37"/><rect x="953.1007514134138" y="146" width="1.303925225718865" height="12" fill="#f34b7d"/><rect x="954.4046766391327" y="146" width="5.595323360867269" height="12" fill="#6e7681"/></g>
   
       <g class="fade" style="animation-delay:0.30s">
         <circle cx="646" cy="191" r="6" fill="#3178c6"/>
         <text x="660" y="196" fill="#c9d1d9" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">TypeScript</text>
-        <text x="790" y="196" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">90.1%</text>
+        <text x="790" y="196" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">90.2%</text>
       </g>
       <g class="fade" style="animation-delay:0.38s">
         <circle cx="811" cy="191" r="6" fill="#7355dd"/>
         <text x="825" y="196" fill="#c9d1d9" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">C#</text>
-        <text x="955" y="196" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">3.7%</text>
+        <text x="955" y="196" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">3.6%</text>
       </g>
       <g class="fade" style="animation-delay:0.46s">
         <circle cx="646" cy="221" r="6" fill="#f1e05a"/>
@@ -105,12 +105,12 @@
       <g class="fade" style="animation-delay:0.70s">
         <circle cx="811" cy="251" r="6" fill="#6e7681"/>
         <text x="825" y="256" fill="#c9d1d9" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">Other</text>
-        <text x="955" y="256" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">1.8%</text>
+        <text x="955" y="256" fill="#8b949e" font-size="13" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">1.7%</text>
       </g>
 
   <text x="40" y="348" fill="#8b949e" font-size="12" letter-spacing="1" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">ACTIVITÉ — 52 DERNIÈRES SEMAINES</text>
   <line x1="40" y1="430" x2="960" y2="430" stroke="#30363d"/>
-  <path d="M40.0,430.0 L58.0,430.0 L76.1,430.0 L94.1,430.0 L112.2,430.0 L130.2,430.0 L148.2,428.4 L166.3,426.8 L184.3,422.0 L202.4,423.6 L220.4,427.6 L238.4,426.8 L256.5,422.0 L274.5,406.0 L292.5,429.2 L310.6,423.6 L328.6,419.6 L346.7,426.8 L364.7,419.6 L382.7,410.0 L400.8,416.4 L418.8,421.2 L436.9,414.8 L454.9,429.2 L472.9,417.2 L491.0,422.0 L509.0,420.4 L527.1,427.6 L545.1,421.2 L563.1,423.6 L581.2,418.0 L599.2,420.4 L617.3,428.4 L635.3,429.2 L653.3,386.8 L671.4,374.0 L689.4,418.0 L707.5,420.4 L725.5,406.8 L743.5,406.8 L761.6,414.0 L779.6,402.8 L797.6,415.6 L815.7,394.8 L833.7,403.6 L851.8,406.8 L869.8,362.0 L887.8,409.2 L905.9,426.8 L923.9,386.8 L942.0,422.8 L960.0,418.0 L960,430 L40,430 Z" fill="url(#area)" class="fade" style="animation-delay:.6s"/>
-  <path d="M40.0,430.0 L58.0,430.0 L76.1,430.0 L94.1,430.0 L112.2,430.0 L130.2,430.0 L148.2,428.4 L166.3,426.8 L184.3,422.0 L202.4,423.6 L220.4,427.6 L238.4,426.8 L256.5,422.0 L274.5,406.0 L292.5,429.2 L310.6,423.6 L328.6,419.6 L346.7,426.8 L364.7,419.6 L382.7,410.0 L400.8,416.4 L418.8,421.2 L436.9,414.8 L454.9,429.2 L472.9,417.2 L491.0,422.0 L509.0,420.4 L527.1,427.6 L545.1,421.2 L563.1,423.6 L581.2,418.0 L599.2,420.4 L617.3,428.4 L635.3,429.2 L653.3,386.8 L671.4,374.0 L689.4,418.0 L707.5,420.4 L725.5,406.8 L743.5,406.8 L761.6,414.0 L779.6,402.8 L797.6,415.6 L815.7,394.8 L833.7,403.6 L851.8,406.8 L869.8,362.0 L887.8,409.2 L905.9,426.8 L923.9,386.8 L942.0,422.8 L960.0,418.0" fill="none" stroke="#1e88e5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" class="draw"/>
+  <path d="M40.0,430.0 L58.0,430.0 L76.1,430.0 L94.1,430.0 L112.2,430.0 L130.2,430.0 L148.2,428.4 L166.3,426.8 L184.3,422.0 L202.4,423.6 L220.4,427.6 L238.4,426.8 L256.5,422.0 L274.5,406.0 L292.5,429.2 L310.6,423.6 L328.6,419.6 L346.7,426.8 L364.7,419.6 L382.7,410.0 L400.8,416.4 L418.8,421.2 L436.9,414.8 L454.9,429.2 L472.9,417.2 L491.0,422.0 L509.0,420.4 L527.1,427.6 L545.1,421.2 L563.1,423.6 L581.2,418.0 L599.2,420.4 L617.3,428.4 L635.3,429.2 L653.3,386.8 L671.4,374.0 L689.4,418.0 L707.5,420.4 L725.5,406.8 L743.5,406.8 L761.6,414.0 L779.6,402.8 L797.6,415.6 L815.7,394.8 L833.7,403.6 L851.8,406.8 L869.8,362.0 L887.8,409.2 L905.9,426.8 L923.9,386.8 L942.0,422.8 L960.0,410.8 L960,430 L40,430 Z" fill="url(#area)" class="fade" style="animation-delay:.6s"/>
+  <path d="M40.0,430.0 L58.0,430.0 L76.1,430.0 L94.1,430.0 L112.2,430.0 L130.2,430.0 L148.2,428.4 L166.3,426.8 L184.3,422.0 L202.4,423.6 L220.4,427.6 L238.4,426.8 L256.5,422.0 L274.5,406.0 L292.5,429.2 L310.6,423.6 L328.6,419.6 L346.7,426.8 L364.7,419.6 L382.7,410.0 L400.8,416.4 L418.8,421.2 L436.9,414.8 L454.9,429.2 L472.9,417.2 L491.0,422.0 L509.0,420.4 L527.1,427.6 L545.1,421.2 L563.1,423.6 L581.2,418.0 L599.2,420.4 L617.3,428.4 L635.3,429.2 L653.3,386.8 L671.4,374.0 L689.4,418.0 L707.5,420.4 L725.5,406.8 L743.5,406.8 L761.6,414.0 L779.6,402.8 L797.6,415.6 L815.7,394.8 L833.7,403.6 L851.8,406.8 L869.8,362.0 L887.8,409.2 L905.9,426.8 L923.9,386.8 L942.0,422.8 L960.0,410.8" fill="none" stroke="#1e88e5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" class="draw"/>
   <text x="960" y="356" fill="#8b949e" font-size="11" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">max 85 / semaine</text>
 </svg>
