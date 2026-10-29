@@ -31,12 +31,10 @@ jobs:
           node-version: 22
 
       - name: Generate GitHub statistics
-        run: node scripts/update-github-stats.mjs
         env:
-          # STATS_TOKEN = PAT classique (scopes: repo, read:org, read:user)
-          # -> inclut repos privés + repos d'organisations. Sans lui : repos publics uniquement.
-          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
-          # INCLUDE_COLLABORATOR: "true"   # décommente pour inclure aussi les repos où tu es collaborateur
+          GH_USERNAME: khadimflash
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || github.token }}
+        run: node scripts/update-github-stats.mjs
 
       - name: Commit generated statistics
         run: |
